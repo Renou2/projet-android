@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/register_titre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/register_titre"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/register_prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/register_placeholder_prenom"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/register_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/register_placholder_nom"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/register_valider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_valider"
+        android:textSize="30sp"
+        android:onClick="saveUser"/>
+</LinearLayout>

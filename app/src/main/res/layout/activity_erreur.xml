@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ErreurActivity">
+
+    <TextView
+        android:id="@+id/erreur_titre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/erreur_titre"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/erreur_nberreurs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/erreur_nberreurs" />
+
+    <Button
+        android:id="@+id/erreur_corriger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/erreur_corriger"
+        android:onClick="CORRIGER"/>
+
+    <Button
+        android:id="@+id/erreur_choixtable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/erreur_changertable"
+        android:onClick="CHANGETABLE"/>
+</LinearLayout>

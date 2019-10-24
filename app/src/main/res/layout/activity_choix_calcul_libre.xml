@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChoixCalculLibre">
+
+    <TextView
+        android:id="@+id/choixcalcullibre_titre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/ccl_tv_titre"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/choixcalcullibre_moins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ccl_tv_moins"
+        android:textSize="18sp" />
+
+    <ToggleButton
+        android:id="@+id/ccl_b_moins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ccl_b_moins" />
+
+    <TextView
+        android:id="@+id/ccl_tv_taille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ccl_tv_taille"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/ccl_rg"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ccl_rb11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ccl_rb11" />
+
+        <RadioButton
+            android:id="@+id/ccl_rb12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ccl_rb12" />
+
+        <RadioButton
+            android:id="@+id/ccl_rb13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ccl_rb13" />
+
+        <RadioButton
+            android:id="@+id/ccl_rb14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ccl_rb14" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/ccl_tv_op"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ccl_tv_op"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/ccl_rg2"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/Additions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ccl_rb21" />
+
+        <RadioButton
+            android:id="@+id/Soustractions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ccl_rb22" />
+
+        <RadioButton
+            android:id="@+id/Multiplications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ccl_rb23" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/ccl_b_valider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ccl_b_valider"
+        android:onClick="RedirectExerciceLibre"/>
+
+</LinearLayout>
